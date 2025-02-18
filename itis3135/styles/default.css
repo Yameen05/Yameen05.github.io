@@ -1,0 +1,77 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: white; /* White background */
+    color: black; /* Default text color */
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+header {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #0073e6; /* Blue header */
+    color: white;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+/* Main Content */
+main {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+/* Sections */
+.about, .projects {
+    margin-bottom: 40px;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #0073e6; /* Blue section titles */
+    border-bottom: 2px solid #0073e6;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+/* Button */
+.btn {
+    display: inline-block;
+    padding: 12px 20px;
+    background-color: #0073e6;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 25px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: #005bb5;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #f8f9fa; /* Light gray footer */
+    color: black;
+    font-size: 0.9rem;
+}
+
+footer a {
+    color: #0073e6;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}

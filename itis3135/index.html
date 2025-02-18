@@ -4,60 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Yameen - Personal Webpage | UNC Charlotte</title>
-    <style>
-        body {
-            background-color: #FFFFFF;
-            color: #333333;
-            margin: 0;
-            padding: 0;
-            font-family: Arial, sans-serif;
-        }
-        #page-wrapper {
-            width: 100%;
-            max-width: 950px;
-            margin: auto;
-        }
-        header {
-            background-color: #006633;
-            color: white;
-            text-align: center;
-            padding: 20px;
-            border-radius: 10px;
-        }
-        main {
-            padding: 20px;
-            text-align: center;
-        }
-        footer {
-            background-color: #222;
-            color: white;
-            text-align: center;
-            padding: 15px;
-            margin-top: 20px;
-            border-radius: 10px;
-        }
-        a {
-            color: #00cc66;
-            text-decoration: none;
-            margin: 0 10px;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
-        button {
-            background-color: #006633;
-            color: white;
-            border: none;
-            padding: 10px 15px;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-        button:hover {
-            background-color: #004d26;
-        }
-    </style>
-
-<head>
+    <link rel="stylesheet" href="styles/default.css">
+</head>
 <body>
 
     <div id="page-wrapper">
@@ -68,20 +16,21 @@
         </header>
 
         <main>
-            <h2>About Me</h2>
-            <p>Hello! I'm a student at UNC Charlotte, passionate about technology and web development.</p>
-            <p><strong>Tagline:</strong> "Learning, Coding, and Creating!"</p>
+            <section class="about">
+                <h2>About Me</h2>
+                <p>Hello! I'm a student at UNC Charlotte, passionate about technology and web development.</p>
+                <p><strong>Tagline:</strong> "Learning, Coding, and Creating!"</p>
+            </section>
 
-            <!-- Button linking to ITIS3135 -->
-            <a href="../itis3135/">
-                <button type="button">Go to ITIS3135</button>
-            </a>
+            <section class="projects">
+                <a href="../itis3135/" class="btn">Go to ITIS3135</a>
+            </section>
         </main>
 
         <footer>
             <nav>
-                <a href="..itis3135/">ITIS3135</a> | 
-                <a href="https://github.com/Yameen05">GitHub.com</a> | 
+                <a href="../itis3135/">ITIS3135</a> | 
+                <a href="https://github.com/Yameen05">GitHub</a> | 
                 <a href="https://Yameen05.github.io">GitHub.io</a> | 
                 <a href="https://www.charlotte.edu">CLT Web</a> | 
                 <a href="https://www.linkedin.com/in/yameen-alsaaidah">LinkedIn</a>
