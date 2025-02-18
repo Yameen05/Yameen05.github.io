@@ -49,39 +49,65 @@ main {
     padding: 20px;
 }
 
-/* Introduction Section */
+
+
+
 #introduction {
-    text-align: left;
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
+    text-align: center;
+    margin-top: 1px;
+    padding: 30px;
+    background-color: #f4f1f9; /* Soft neutral light background */
+}
+
+#introduction h1 {
+    color: #9c27b0; /* Deep purple */
+    font-size: 36px;
+    font-weight: bold;
 }
 
 #introduction h2 {
-    text-align: center;
-    color: #49739c;
-    margin-bottom: 15px;
+    color: #8e24aa; /* Rich magenta-pink */
+    font-size: 32px;
+    font-weight: bold;
 }
 
 #introduction h3 {
-    color: #004080;
-    margin-top: 15px;
+    color: #8e24aa; /* Purple with pinkish hue */
+    margin-top: 20px;
+    font-size: 24px;
 }
 
 #introduction p {
     font-size: 16px;
     line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 10px;
+    color: #444; /* Darker gray for readability */
 }
 
+/* Style the list */
 #introduction ul {
-    list-style-type: square;
-    margin-left: 20px;
+    list-style-type: none;
+    padding: 0;
+    text-align: left;
+    max-width: 800px;
+    margin: 20px auto;
 }
 
 #introduction ul li {
-    font-size: 16px;
-    line-height: 1.6;
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #333; /* Darker text for contrast */
 }
+
+
+
+
+
+
+
+
 
 /* Button Styling */
 button {
