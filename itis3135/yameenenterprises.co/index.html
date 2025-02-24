@@ -5,27 +5,107 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Yameen Enterprises</title>
     <style>
-       
-       body {
+        /* General Styling */
+        body {
             font-family: Arial, sans-serif;
             background-color: #f4f4f4;
             color: #333;
             margin: 0;
             padding: 0;
+            line-height: 1.6;
         }
+
+        /* Header */
         header {
-            background-color: #0077b6;
+            background-color: #0077b6; /* Deep Blue */
             color: white;
             padding: 20px;
             text-align: center;
         }
+
+        /* Logo Styling */
+        .logo {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px; /* Space between image and text */
+        }
+
+        .logo-image {
+            width: 80px; /* Adjust size as needed */
+            height: auto;
+            border-radius: 10px; /* Optional: Adds rounded corners to the logo */
+        }
+
+        .logo-text {
+            text-align: left; /* Align text to the left of the image */
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .logo-part1 {
+            font-size: 36px;
+            font-weight: bold;
+            color: white; /* White for contrast */
+            display: block; /* Puts "YAMEEN" on its own line */
+        }
+
+        .logo-part2 {
+            font-size: 24px;
+            font-weight: normal;
+            color: #e3f2fd; /* Light Blue for contrast */
+            display: block; /* Puts "ENTERPRISES" on its own line */
+        }
+
+        /* Main Content */
         main {
             padding: 20px;
             max-width: 800px;
             margin: 0 auto;
         }
+
+        h2 {
+            color: #0077b6; /* Deep Blue */
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 1.1em;
+            margin-bottom: 20px;
+        }
+
+        ul {
+            list-style-type: square;
+            padding-left: 20px;
+            margin-bottom: 20px;
+        }
+
+        ul li {
+            font-size: 1em;
+            margin-bottom: 10px;
+        }
+
+        address {
+            font-style: normal;
+            background-color: #e3f2fd; /* Light Blue */
+            padding: 15px;
+            border-left: 5px solid #0077b6; /* Deep Blue */
+            margin-top: 20px;
+        }
+
+        address a {
+            color: #0077b6; /* Deep Blue */
+            text-decoration: none;
+        }
+
+        address a:hover {
+            text-decoration: underline;
+        }
+
+        /* Footer */
         footer {
-            background-color: #0077b6;
+            background-color: #0077b6; /* Deep Blue */
             color: white;
             text-align: center;
             padding: 10px;
@@ -33,23 +113,28 @@
             bottom: 0;
             width: 100%;
         }
-        ul {
-            list-style-type: square; 
-        }
-        address {
-            font-style: normal;
-            margin-top: 20px;
+
+        footer p {
+            margin: 0;
+            font-size: 0.9em;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Yameen Enterprises</h1>
-        <img src="../images/ME.jpg" alt="Yameen Enterprises Logo" width="200" height="200" border-radius="10">
+        <div class="logo">
+            <img src="../images/y.jpg" alt="Yameen Enterprises Logo" class="logo-image">
+            <div class="logo-text">
+                <span class="logo-part1">YAMEEN</span>
+                <span class="logo-part2">ENTERPRISES</span>
+            </div>
+        </div>
     </header>
     <main>
         <h2>Welcome to Yameen Enterprises</h2>
         <p>Yameen Enterprises is a premier web development and design firm dedicated to creating stunning, user-friendly websites that drive results. Our team of experts is passionate about delivering top-notch digital solutions tailored to your unique needs.</p>
+        
+        <h2>Our Services</h2>
         <ul>
             <li>Custom Web Design</li>
             <li>Responsive Development</li>
@@ -57,11 +142,14 @@
             <li>E-commerce Solutions</li>
             <li>Branding and Identity</li>
         </ul>
+
         <p>We are committed to helping our clients achieve their online goals. Contact us today to learn more about how we can help your business thrive in the digital world.</p>
+
         <address>
-            Email: <a href="mailto:yalsaaid@charlotte.edu">yalsaaid@charlotte.eduo</a><br>
+            <strong>Contact Us:</strong><br>
+            Email: <a href="mailto:info@yameenenterprises.co">info@yameenenterprises.co</a><br>
             Phone: (123) 456-7890<br>
-            Address: 9201 University City Blvd, Charlotte, NC 28223
+            Address: 123 Web Design Lane, Charlotte, NC 28223
         </address>
     </main>
     <footer>

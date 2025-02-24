@@ -171,3 +171,38 @@ img {
     padding: 10px;
     color: #444; /* Darker gray for readability */
 }
+
+
+/* Logo Styling */
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px; /* Space between image and text */
+}
+
+.logo-image {
+    width: 80px; /* Adjust size as needed */
+    height: auto;
+    border-radius: 10px; /* Optional: Adds rounded corners to the logo */
+}
+
+.logo-text {
+    text-align: left; /* Align text to the left of the image */
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.logo-part1 {
+    font-size: 36px;
+    font-weight: bold;
+    color: white; /* White for contrast */
+    display: block; /* Puts "YAMEEN" on its own line */
+}
+
+.logo-part2 {
+    font-size: 24px;
+    font-weight: normal;
+    color: #e3f2fd; /* Light Blue for contrast */
+    display: block; /* Puts "ENTERPRISES" on its own line */
+}
