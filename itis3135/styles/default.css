@@ -1,17 +1,16 @@
-/* General Styling */
 body {
     font-family: Arial, sans-serif;
     background-color: white;
-    color: black;
+    color: #333; 
     margin: 0;
     padding: 0;
+    line-height: 1.6;
 }
 
-/* Header */
 header {
     text-align: center;
     padding: 20px;
-    background-color: #004080; /* Deep Blue */
+    background-color: #0077b6; 
     color: white;
 }
 
@@ -24,7 +23,7 @@ header p {
     font-size: 16px;
 }
 
-/* Navigation Bar */
+
 nav {
     text-align: center;
     padding: 10px;
@@ -33,7 +32,7 @@ nav {
 }
 
 nav a {
-    color: #004080; /* Deep Blue */
+    color: #0077b6; 
     text-decoration: none;
     font-weight: bold;
     padding: 0 15px;
@@ -41,38 +40,38 @@ nav a {
 
 nav a:hover {
     text-decoration: underline;
+    color: #005f8a; 
 }
 
-/* Main Content */
+
 main {
     text-align: center;
     padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
 }
-
-
-
 
 #introduction {
     text-align: center;
     margin-top: 1px;
     padding: 30px;
-    background-color: #f4f1f9; /* Soft neutral light background */
+    background-color: #e3f2fd;
 }
 
 #introduction h1 {
-    color: #9c27b0; /* Deep purple */
+    color: #0077b6;
     font-size: 36px;
     font-weight: bold;
 }
 
 #introduction h2 {
-    color: #8e24aa; /* Rich magenta-pink */
+    color: #005f8a; 
     font-size: 32px;
     font-weight: bold;
 }
 
 #introduction h3 {
-    color: #8e24aa; /* Purple with pinkish hue */
+    color: #005f8a; 
     margin-top: 20px;
     font-size: 24px;
 }
@@ -83,10 +82,10 @@ main {
     max-width: 800px;
     margin: 0 auto;
     padding: 10px;
-    color: #444; /* Darker gray for readability */
+    color: #444; 
 }
 
-/* Style the list */
+
 #introduction ul {
     list-style-type: none;
     padding: 0;
@@ -98,15 +97,12 @@ main {
 #introduction ul li {
     font-size: 18px;
     margin-bottom: 10px;
-    color: #333; /* Darker text for contrast */
+    color: #333; 
 }
 
 
-
-
-/* Button Styling */
 button {
-    background-color: #004080;
+    background-color: #0077b6; 
     color: white;
     border: none;
     padding: 10px 20px;
@@ -117,10 +113,9 @@ button {
 }
 
 button:hover {
-    background-color: #002f5f;
+    background-color: #005f8a; 
 }
 
-/* Footer */
 footer {
     text-align: center;
     padding: 15px;
@@ -129,21 +124,50 @@ footer {
 }
 
 footer nav a {
-    color: #004080;
+    color: #0077b6; 
     text-decoration: none;
     padding: 0 10px;
 }
 
 footer nav a:hover {
     text-decoration: underline;
+    color: #005f8a; 
 }
 
 img {
-    width: 200px;  
+    width: 200px;
     height: auto;
+    border-radius: 10px; 
 }
 
+/* Contract Section */
+#contract {
+    text-align: center;
+    margin-top: 1px;
+    padding: 30px;
+    background-color: #e3f2fd; /* Light blue background */
+    border-radius: 10px; /* Rounded corners for a modern look */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
 
+#contract h2 {
+    color: #0077b6; /* Deep Blue */
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
 
+#contract h3 {
+    color: #005f8a; /* Slightly darker blue */
+    margin-top: 20px;
+    font-size: 24px;
+}
 
-
+#contract p {
+    font-size: 16px;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 10px;
+    color: #444; /* Darker gray for readability */
+}
