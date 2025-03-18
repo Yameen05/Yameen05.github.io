@@ -1,199 +1,285 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Hobbies - Yameen Alsaaidah</title>
-  <link rel="icon" type="image/x-icon" href="../images/idk">
-  <style>
-    /* Embedded CSS - Light Blue Theme */
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For the Love of Soccer</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico"> <!-- Add favicon -->
+    <style>
+      /* General Styles */
+      body {
+          font-family: 'Arial', sans-serif;
+          background-color: #ffffff; /* White background */
+          color: #333333; /* Dark gray text */
+          margin: 0;
+          padding: 0;
+          line-height: 1.6;
+      }
     
-    body {
-      font-family: 'Arial', sans-serif;
-      background-color: #e6f7ff; 
-      color: #333;
-      margin: 0;
-      padding: 0;
-      text-align: center;
-    }
-    header {
-      background-color: #0077b6;
-      color: white;
-      padding: 20px 0;
-      text-align: center;
-    }
-    nav {
-      display: flex;
-      justify-content: center;
-      background-color: #023e8a;
-      padding: 10px;
-    }
-    nav a {
-      color: white;
-      text-decoration: none;
-      margin: 0 15px;
-      font-weight: bold;
-      font-size: 18px;
-    }
-    nav a:hover {
-      text-decoration: underline;
-      color: #90e0ef;
-    }
-    section {
-      display: none;
-      padding: 20px;
-      background-color: white;
-      margin: 20px;
-      border-radius: 10px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-      text-align: center;
-    }
-    section:target {
-      display: block;
-    }
-    figure {
-      text-align: center;
-      margin: 20px 0;
-    }
-    figcaption {
-      font-style: italic;
-      margin-top: 10px;
-      color: #555;
-    }
-    footer {
-      background-color: #023e8a; 
-      color: white;
-      text-align: center;
-      padding: 10px 0;
-      width: 100%;
-      margin-top: 20px; 
-    }
-    img {
-      max-width: 30%; 
-      height: auto; 
-      border-radius: 10px;
-      display: block;
-      margin: 0 auto;
-    }
-    h2 {
-      color: #0077b6;
-    }
-    .image-grid {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 10px;
-    }
-  </style>
+      header {
+          background-color: #ffffff; /* White header */
+          color: #000000; /* Black text */
+          padding: 20px;
+          text-align: center;
+          border-bottom: 3px solid #FFD700; /* Gold border */
+          box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+      }
+    
+      header h1 {
+          margin: 0;
+          font-size: 2.5rem;
+          font-weight: bold;
+          color: #000000; /* Black text */
+      }
+    
+      nav {
+          margin-top: 10px;
+      }
+    
+      nav a {
+          color: #000000; /* Black links */
+          text-decoration: none;
+          margin: 0 15px;
+          font-weight: bold;
+          font-size: 1.1rem;
+      }
+    
+      nav a:hover {
+          color: #FFD700; /* Gold on hover */
+          text-decoration: underline;
+      }
+    
+      section {
+          padding: 20px;
+          margin: 20px auto;
+          max-width: 800px;
+          background-color: #f9f9f9; /* Light gray for sections */
+          border-radius: 10px;
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+          display: none; /* Hide all sections by default */
+      }
+    
+      section:target {
+          display: block; /* Show the targeted section */
+      }
+    
+      section h2 {
+          color: #FFD700; /* Gold headings */
+          font-size: 2rem;
+          margin-bottom: 15px;
+          border-bottom: 2px solid #FFD700; /* Gold underline */
+          padding-bottom: 5px;
+      }
+    
+      section p {
+          font-size: 1.1rem;
+          color: #555555; /* Dark gray text */
+      }
+    
+      button {
+          background-color: #FFD700; /* Gold button */
+          color: #000000; /* Black text */
+          border: none;
+          padding: 10px 20px;
+          font-size: 1rem;
+          cursor: pointer;
+          border-radius: 5px;
+          margin: 20px;
+          transition: background-color 0.3s ease;
+      }
+    
+      button:hover {
+          background-color: #e6b800; /* Darker gold on hover */
+      }
+    
+      footer {
+          background-color: #ffffff; /* White footer */
+          color: #000000; /* Black text */
+          text-align: center;
+          padding: 15px;
+          border-top: 3px solid #FFD700; /* Gold border */
+          box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+          position: fixed;
+          bottom: 0;
+          width: 100%;
+      }
+    
+      /* Responsive Design */
+      @media (max-width: 768px) {
+          header h1 {
+              font-size: 2rem;
+          }
+    
+          nav a {
+              display: block;
+              margin: 10px 0;
+          }
+    
+          section {
+              padding: 15px;
+          }
+      }
+    
+      /* Dark Mode Styles */
+      .dark-mode {
+          background-color: #1a1a1a; /* Dark background */
+          color: #ffffff; /* White text */
+      }
+      .dark-mode header {
+          background-color: #333333; /* Dark header */
+          color: #ffffff; /* White text */
+          border-bottom: 3px solid #FFD700; /* Gold border */
+      }
+      .dark-mode nav a {
+          color: #ffffff; /* White links */
+      }
+      .dark-mode nav a:hover {
+          color: #FFD700; /* Gold on hover */
+      }
+      .dark-mode section {
+          background-color: #444444; /* Dark sections */
+          color: #ffffff; /* White text */
+      }
+      .dark-mode section h2 {
+          color: #FFD700; /* Gold headings */
+          border-bottom: 2px solid #FFD700; /* Gold underline */
+      }
+      .dark-mode section p {
+          color: #ffffff; /* White text */
+      }
+      .dark-mode footer {
+          background-color: #333333; /* Dark footer */
+          color: #ffffff; /* White text */
+          border-top: 3px solid #FFD700; /* Gold border */
+      }
+    
+      /* Image Styles */
+      figure {
+          text-align: center;
+          margin: 20px 0;
+      }
+    
+      img {
+          max-width: 100%; /* Ensure images don't exceed their container's width */
+          height: auto; /* Maintain aspect ratio */
+          border-radius: 10px; /* Rounded corners */
+          display: block; /* Center the image */
+          margin: 0 auto; /* Center the image horizontally */
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+      }
+    
+      figcaption {
+          font-style: italic;
+          margin-top: 10px;
+          color: #555555; /* Dark gray text */
+          font-size: 0.9rem; /* Smaller font size for captions */
+      }
+    </style>
 </head>
 <body>
-  <header>
-    <h1>My Hobbies</h1>
-    <nav>
-      <a href="#home">Home</a>
-      <a href="#soccer">Soccer</a>
-      <a href="#cars">Cars</a>
-      <a href="#coding">Coding</a>
-      <a href="#gym">Gym</a>
-      <a href="#travel">Travel</a>
-      <a href="#ai-prompts">AI Prompts</a>
-    </nav>
-  </header>
+    <header>
+        <h1>For the Love of Soccer ⚽</h1>
+        <nav>
+            <a href="#home">Home</a> | 
+            <a href="#about">About Me</a> | 
+            <a href="#why">Why Soccer?</a> | 
+            <a href="#teams">Best Teams</a> | 
+            <a href="#goat">The GOAT</a> | 
+            <a href="#how">How I Play</a> | 
+            <a href="#ai">AI Prompts</a>
+        </nav>
+    </header>
 
-  <main>
+    <main>
+        <!-- Home Section -->
+        <section id="home">
+            <h2>Welcome</h2>
+            <p>This site is dedicated to my love for soccer, my favorite club Real Madrid, and the one and only Cristiano Ronaldo! Explore to know more about me, how I play, and why soccer means the world to me!</p>
+            <figure>
+                <img src="../images/ball.jpg" alt="Soccer ball on a field">
+                <figcaption>A soccer ball on a field.</figcaption>
+            </figure>
+            <p><i>Prompt used: "A soccer ball on a field with a sunset in the background."</i></p>
+        </section>
 
-    <section id="home">
-      <h2>Welcome to My Hobby Site!</h2>
-      <p>Hey! I'm passionate about soccer, cars, coding, going to the gym, traveling, and driving around the city. This site is all about my hobbies and interests. Explore the sections below to learn more!</p>
-      <figure>
-        <img src="../images/idk.jpg" alt="A collage of soccer, cars, coding, gym, travel, and driving">
-        <figcaption>A mix of my favorite hobbies.</figcaption>
-      </figure>
-      <p><i>A collage of soccer, cars, coding, gym, travel, and driving.</i></p>
-    </section>
+        <!-- About Me Section -->
+        <section id="about">
+            <h2>About Me</h2>
+            <p>My name is Yameen Alsaaidah. Soccer became my life the moment I saw Cristiano Ronaldo score a jaw-dropping free kick for Real Madrid on TV. Since then, I’ve been obsessed. I’ve played almost every day, dreaming about the Bernabéu and feeling the passion that soccer brings to my life. Whether watching Real Madrid lift trophies or hitting the pitch with my friends, soccer has become part of who I am.</p>
+            <figure>
+                <img src="../images/ME.jpg" alt="A photo of me">
+                <figcaption>This is me!</figcaption>
+            </figure>
+            <p><i>Prompt used: "A photo of me."</i></p>
+        </section>
 
-    <section id="soccer">
-      <h2>Soccer - My Passion</h2>
-      <p>Soccer is my favorite sport. I love playing casually with friends on weekends, watching La Liga (especially Real Madrid), and following the Champions League and World Cup.</p>
-      <p>My favorite team is Real Madrid (RMA). Their history, players, and style of play inspire me. I also enjoy analyzing tactics and player performances.</p>
-      <figure>
-        <img src="../images/madrid.jpg" alt="Real Madrid team celebrating a win">
-        <figcaption>The beautiful game.</figcaption>
-      </figure>
-      <p><i>Real Madrid Santiago Bernabéu Stadium</i></p>
-    </section>
+        <!-- Why Soccer Section -->
+        <section id="why">
+            <h2>Why Soccer?</h2>
+            <p>Soccer makes me feel alive, free, and unstoppable. It clears my mind, sharpens my body, and fills me with purpose. The speed, the strategy, the heart-pounding moments—soccer is more than fitness, it's therapy and adrenaline in one. It’s where I’ve learned resilience, teamwork, and discipline.</p>
+            <figure>
+                <img src="../images/bellingham celebration.webp" alt="Soccer players celebrating">
+                <figcaption>Soccer players celebrating a goal.</figcaption>
+            </figure>
+            <p><i>Prompt used: "Soccer players celebrating a goal."</i></p>
+        </section>
 
-    <section id="cars">
-      <h2>Cars - My Ultimate Love</h2>
-      <p>I absolutely love cars. From drag races to street races, I’m obsessed with the speed, power, and engineering behind them. My dream car is a BMW M4 Competition, and I’m working hard to make that dream a reality when I have a stable job.</p>
-      <p>I’m a huge fan of German cars like BMW and Porsche, but I also have a soft spot for Japanese cars. The Nissan Skyline GT-R R34 stole my heart after watching Fast and Furious, and the R35 is a beast. The Toyota Supra MK4 is another favorite, especially when people push it to insane levels like 3000 HP!</p>
-      <div class="image-grid">
-        <figure>
-          <img src="../images/bmw.jpg" alt="A BMW M4 Competition">
-          <figcaption>BMW M4 Competition</figcaption>
-        </figure>
-        <figure>
-          <img src="../images/gtr.jpg" alt="A Nissan Skyline GT-R R34">
-          <figcaption>Nissan Skyline GT-R R34</figcaption>
-        </figure>
-      </div>
-    </section>
+        <!-- Best Teams Section -->
+        <section id="teams">
+            <h2>Best Team: Real Madrid</h2>
+            <p>Real Madrid. The kings of Europe. 14-time UEFA Champions League winners, 35 La Liga titles, a symbol of greatness. Legends like Zidane, Raul, Casillas, and of course Cristiano Ronaldo have worn the iconic white jersey. No team matches their legacy, their winning mentality, or their magic under the Bernabéu lights. Hala Madrid y nada más!</p>
+            <figure>
+                <img src="../images/XI4DIZZ7URMA5LUDUSERKVHCIA.avif" alt="Real Madrid team">
+                <figcaption>Real Madrid team celebrating a win.</figcaption>
+            </figure>
+            <p><i>Prompt used: "Real Madrid team celebrating a win."</i></p>
+        </section>
 
-    <section id="coding">
-      <h2>Coding - My Creative Outlet</h2>
-      <p>Coding is more than just a skill for me; it's a way to express creativity and solve problems. I love the vibe it gives me when I build something from scratch.</p>
-      <p>Whether it's web development, scripting, or learning new technologies, coding keeps me engaged and motivated.</p>
-      <figure>
-        <img src="../images/coding.jpg" alt="A laptop with code on the screen">
-        <figcaption>Coding is my passion.</figcaption>
-      </figure>
-      <p><i>A laptop with code on the screen in a dark room.</i></p>
-    </section>
+        <!-- The GOAT Section -->
+        <section id="goat">
+            <h2>The GOAT: Cristiano Ronaldo</h2>
+            <p>From Lisbon to Manchester, to Madrid, to Turin, and now Al Nassr. Cristiano Ronaldo is football royalty. 5 Ballon d'Ors, 5 Champions Leagues, over 800 goals, and an example of iron discipline. The highest scorer in both Real Madrid and international history. His work ethic, mindset, and love for the game made him my idol and the greatest to ever grace the pitch.</p>
+            <figure>
+                <img src="../images/143217810.jpg" alt="Cristiano Ronaldo">
+                <figcaption>Cristiano Ronaldo celebrating a goal.</figcaption>
+            </figure>
+            <p><i>Prompt used: "Cristiano Ronaldo celebrating a goal."</i></p>
+        </section>
 
-    <section id="gym">
-      <h2>Gym - Staying Active</h2>
-      <p>I go to the gym at least 3 times a week to stay fit and healthy. It's a great way to relieve stress and improve my overall well-being.</p>
-      <p>My routine includes weightlifting, cardio, and stretching. I love the feeling of progress and pushing my limits.</p>
-      <figure>
-        <img src="../images/gym.jpg" alt="A gym with weights and equipment">
-        <figcaption>My gym routine keeps me energized.</figcaption>
-      </figure>
-      <p><i>A modern gym with weights and equipment.</i></p>
-    </section>
+        <!-- How I Play Section -->
+        <section id="how">
+            <h2>How I Play</h2>
+            <p>I love playing on the wing, where I can use my speed to exploit space. I'm fast, sharp, and I try to play like Vinicius Jr. — quick dribbles, cuts inside, and lots of flair. I thrive on one-on-ones and delivering assists or cutting in for the shot. The feeling of leaving a defender behind is like no other!</p>
+            <figure>
+                <img src="../images/vini fast.jpg" alt="Soccer player dribbling">
+                <figcaption>A soccer player dribbling the ball.</figcaption>
+            </figure>
+            <p><i>Prompt used: "A soccer player dribbling the ball."</i></p>
+        </section>
 
-    <section id="travel">
-      <h2>Travel - Exploring the World</h2>
-      <p>I love the idea of traveling and exploring new places. Even though I haven't traveled much yet, I dream of visiting cities, mountains, and beaches around the world.</p>
-      <p>Traveling is about experiencing new cultures, meeting people, and creating unforgettable memories.</p>
-      <figure>
-        <img src="../images/travel.jpg" alt="A scenic travel destination">
-        <figcaption>Dreaming of my next adventure.</figcaption>
-      </figure>
-      
-    </section>
+        <!-- AI Prompts Section -->
+        <section id="ai">
+            <h2>AI Prompts</h2>
+            <ul>
+                <li>“Help me implement a ”</li>
+                <li>“”</li>
+                <li>“”</li>
+                <li>“”</li>
+                <li>“”</li>
+            </ul>
+        </section>
+    </main>
 
-    <section id="ai-prompts">
-      <h2>AI Prompts</h2>
-      <p>Here are the prompts I used to generate content and images for this site:</p>
-      <ul>
-        <p>“Help me create a multi-section HTML page for my hobby with header, main, and footer tags.”</p>
-        <p>“Generate CSS styles for the hobby page following CRAP principles and using a light blue color scheme.”</p>
-        <p>“Write JavaScript code to hide all sections and show the selected section when clicking navbar links.”</p>
-        <p>“Fix my footer validation links and make sure they’re accessible and styled properly.”</p>
-        <p>“Help me add smooth scrolling CSS for anchor links on my page.”</p>
-        <p>“Make sure my sections have at least 3 things, like figures, tables, forms, etc.”</p>
-        <p>“Review my HTML and make sure it meets assignment requirements for my hobby website.”</p>
-      </ul>
-    </section>
-  </main>
+    <footer>
+        <p>© 2025 Yameen | Page designed by <a href="../yameenenterprises.com/" aria-label="Visit Yameen Enterprises">Yameen Enterprises</a></p>
+        <p>
+            <a href="https://validator.w3.org/check?uri=referer" target="_blank">HTML Validation</a> |
+            <a href="https://jigsaw.w3.org/css-validator/check/referer" target="_blank">CSS Validation</a> |
+            <a href="https://wave.webaim.org/report#/https://yameen05.github.io/itis3135/hobby/" target="_blank">Accessibility Validation</a>
+        </p>
+    </footer>
 
-  <footer>
-    <p>© 2025 Yameen | Page designed by <a href="../yameenenterprises.com/" aria-label="Visit Yameen Enterprises">Yameen Enterprises</a></p></footer>
-
-  <script>
-    // Automatically scroll to the home section when the page loads
-    window.onload = function() {
-      window.location.href = "#home";
-    };
-  </script>
+    <!-- Link to External JavaScript File -->
+    <script src="script.js"></script>
 </body>
 </html>
