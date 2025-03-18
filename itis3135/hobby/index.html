@@ -7,6 +7,8 @@
     <link rel="icon" type="image/x-icon" href="images/favicon.ico"> <!-- Add favicon -->
     <style>
       /* General Styles */
+      html {
+        scroll-behavior: smooth;
       body {
           font-family: 'Arial', sans-serif;
           background-color: #ffffff; /* White background */
@@ -57,6 +59,7 @@
           border-radius: 10px;
           box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
           display: none; /* Hide all sections by default */
+          padding-bottom: 80px; /* Add padding for footer space */
       }
     
       section:target {
@@ -102,6 +105,8 @@
           position: fixed;
           bottom: 0;
           width: 100%;
+          position: static;
+
       }
     
       /* Responsive Design */
@@ -160,7 +165,7 @@
       }
     
       img {
-          max-width: 100%; /* Ensure images don't exceed their container's width */
+          max-width: 50%; /* Ensure images don't exceed their container's width */
           height: auto; /* Maintain aspect ratio */
           border-radius: 10px; /* Rounded corners */
           display: block; /* Center the image */
@@ -178,7 +183,7 @@
 </head>
 <body>
     <header>
-        <h1>For the Love of Soccer ⚽</h1>
+        <h1>Yameen - Hobby Page ⚽</h1>
         <nav>
             <a href="#home">Home</a> | 
             <a href="#about">About Me</a> | 
@@ -196,10 +201,9 @@
             <h2>Welcome</h2>
             <p>This site is dedicated to my love for soccer, my favorite club Real Madrid, and the one and only Cristiano Ronaldo! Explore to know more about me, how I play, and why soccer means the world to me!</p>
             <figure>
-                <img src="../images/ball.jpg" alt="Soccer ball on a field">
+              <img src="../images/ball.jpg" alt="Ball on the field">
                 <figcaption>A soccer ball on a field.</figcaption>
             </figure>
-            <p><i>Prompt used: "A soccer ball on a field with a sunset in the background."</i></p>
         </section>
 
         <!-- About Me Section -->
@@ -210,19 +214,17 @@
                 <img src="../images/ME.jpg" alt="A photo of me">
                 <figcaption>This is me!</figcaption>
             </figure>
-            <p><i>Prompt used: "A photo of me."</i></p>
         </section>
 
-        <!-- Why Soccer Section -->
-        <section id="why">
-            <h2>Why Soccer?</h2>
-            <p>Soccer makes me feel alive, free, and unstoppable. It clears my mind, sharpens my body, and fills me with purpose. The speed, the strategy, the heart-pounding moments—soccer is more than fitness, it's therapy and adrenaline in one. It’s where I’ve learned resilience, teamwork, and discipline.</p>
-            <figure>
-                <img src="../images/bellingham celebration.webp" alt="Soccer players celebrating">
-                <figcaption>Soccer players celebrating a goal.</figcaption>
-            </figure>
-            <p><i>Prompt used: "Soccer players celebrating a goal."</i></p>
-        </section>
+       <!-- Why Soccer Section -->
+<section id="why">
+  <h2>Why Soccer?</h2>
+  <p>Soccer makes me feel alive, free, and unstoppable. It clears my mind, sharpens my body, and fills me with purpose. The speed, the strategy, the heart-pounding moments—soccer is more than fitness, it's therapy and adrenaline in one. It’s where I’ve learned resilience, teamwork, and discipline.</p>
+  <figure>
+    <img src="../images/bellingham celebration.webp" alt="bellingham celebrating">
+      <figcaption>Soccer players celebrating a goal.</figcaption>
+  </figure>
+</section>
 
         <!-- Best Teams Section -->
         <section id="teams">
@@ -232,7 +234,6 @@
                 <img src="../images/XI4DIZZ7URMA5LUDUSERKVHCIA.avif" alt="Real Madrid team">
                 <figcaption>Real Madrid team celebrating a win.</figcaption>
             </figure>
-            <p><i>Prompt used: "Real Madrid team celebrating a win."</i></p>
         </section>
 
         <!-- The GOAT Section -->
@@ -243,41 +244,41 @@
                 <img src="../images/143217810.jpg" alt="Cristiano Ronaldo">
                 <figcaption>Cristiano Ronaldo celebrating a goal.</figcaption>
             </figure>
-            <p><i>Prompt used: "Cristiano Ronaldo celebrating a goal."</i></p>
         </section>
 
         <!-- How I Play Section -->
-        <section id="how">
-            <h2>How I Play</h2>
-            <p>I love playing on the wing, where I can use my speed to exploit space. I'm fast, sharp, and I try to play like Vinicius Jr. — quick dribbles, cuts inside, and lots of flair. I thrive on one-on-ones and delivering assists or cutting in for the shot. The feeling of leaving a defender behind is like no other!</p>
+          <section id="how">
+              <h2>How I Play</h2>
+              <p>I love playing on the wing, where I can use my speed to exploit space. I'm fast, sharp, and I try to play like Vinicius Jr. — quick dribbles, cuts inside, and lots of flair. I thrive on one-on-ones and delivering assists or cutting in for the shot. The feeling of leaving a defender behind is like no other!</p>
             <figure>
-                <img src="../images/vini fast.jpg" alt="Soccer player dribbling">
-                <figcaption>A soccer player dribbling the ball.</figcaption>
-            </figure>
-            <p><i>Prompt used: "A soccer player dribbling the ball."</i></p>
-        </section>
+      <img src="../images/vini fast.jpg" alt="vini balling">
+      <figcaption>A soccer player dribbling the ball.</figcaption>
+  </figure>
+</section>
 
         <!-- AI Prompts Section -->
         <section id="ai">
             <h2>AI Prompts</h2>
             <ul>
-                <li>“Help me implement a ”</li>
-                <li>“”</li>
-                <li>“”</li>
-                <li>“”</li>
-                <li>“”</li>
+                <li>“Help me implement a dark mode toggle button using JavaScript”</li>
+                <li>“Help me style images to fit the screen and look visually appealing using CSS”</li>
+                <li>“Help me use JavaScript to hide and show sections of my page when a link is clicked”</li>
+                <li>“Help me improve the styling of my navigation bar using CSS to make it more user-friendly”</li>
+                <li>“Can you review my code and give me feedback on how to improve its structure and performance?”</li>
             </ul>
         </section>
     </main>
-
+    
+    
     <footer>
-        <p>© 2025 Yameen | Page designed by <a href="../yameenenterprises.com/" aria-label="Visit Yameen Enterprises">Yameen Enterprises</a></p>
-        <p>
-            <a href="https://validator.w3.org/check?uri=referer" target="_blank">HTML Validation</a> |
-            <a href="https://jigsaw.w3.org/css-validator/check/referer" target="_blank">CSS Validation</a> |
-            <a href="https://wave.webaim.org/report#/https://yameen05.github.io/itis3135/hobby/" target="_blank">Accessibility Validation</a>
-        </p>
-    </footer>
+      <p>© 2025 Yameen | Page designed by <a href="../yameenenterprises.com/">Yameen Enterprises</a></p>
+      <p>
+          <a href="https://validator.w3.org/" target="_blank">HTML Validation</a> | 
+          <a href="https://jigsaw.w3.org/css-validator/" target="_blank">CSS Validation</a> | 
+          <a href="https://wave.webaim.org/" target="_blank">Accessibility Check</a>
+      </p>
+  </footer>
+    
 
     <!-- Link to External JavaScript File -->
     <script src="script.js"></script>
