@@ -8,16 +8,8 @@
 </head>
 <body>
     <div id="page-wrapper">
-        <header>
-            <h1>Contract</h1>
-            <p>This document outlines the terms and conditions for the use of this personal webpage.</p>
-        </header>
-
-        <nav>
-            <div style="text-align: center; margin-top: 30px;">
-                <button onclick="window.location.href='index.html';">Back to Home</button>
-            </div>
-        </nav>
+        <!-- Header Component -->
+        <div data-include="components/header.html"></div>
 
         <main>
             <section id="contract">
@@ -35,9 +27,11 @@
             </section>
         </main>
 
-        <footer>
-            <p>Page designed by <a href="yameenenterprises.com/">Yameen Enterprises</a></p>
-        </footer>
+        <!-- Footer Component -->
+        <div data-include="components/footer.html"></div>
     </div>
+
+    <!-- Load components -->
+    <script src="scripts/HTMLInclude.js"></script>
 </body>
 </html>
