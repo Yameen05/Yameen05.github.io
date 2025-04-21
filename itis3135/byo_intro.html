@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BYO Intro | Yameen - UNC Charlotte</title>
+    <link rel="stylesheet" href="styles/default.css">
+    <script src="scripts/survey.js" defer></script>
+</head>
+<body>
+    <div id="page-wrapper">
+        <!-- Header component -->
+        <div data-include="components/header.html"></div>
+
+        <main>
+            <h2>Build Your Own Intro Page</h2>
+            
+            <h3>Time to BYO Intro page, please fill out the form below so we can create your own page.</h3>
+            
+            <form id="introForm">
+                <fieldset>
+                    <legend>Basic Information</legend>
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required value="Yameen Alsaaidah">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="mascot">Mascot/Nickname:</label>
+                        <input type="text" id="mascot" name="mascot" required value="Young Atlas">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="image">Image Upload (PNG/JPG):</label>
+                        <input type="file" id="image" name="image" accept=".png,.jpg,.jpeg" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="imageCaption">Image Caption:</label>
+                        <input type="text" id="imageCaption" name="imageCaption" required value="Yameen at UNC Charlotte">
+                    </div>
+                </fieldset>
+                
+                <fieldset>
+                    <legend>Background Information</legend>
+                    <div class="form-group">
+                        <label for="personalBg">Personal Background:</label>
+                        <textarea id="personalBg" name="personalBg" required>I'm a passionate computer science student at UNC Charlotte with interests in web development and artificial intelligence.</textarea>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="professionalBg">Professional Background:</label>
+                        <textarea id="professionalBg" name="professionalBg" required>Currently working as a web development intern while completing my degree.</textarea>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="academicBg">Academic Background:</label>
+                        <textarea id="academicBg" name="academicBg" required>BS in Computer Science at UNC Charlotte, expected graduation 2024.</textarea>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="webBg">Background in Web Development:</label>
+                        <textarea id="webBg" name="webBg" required>2 years experience with HTML, CSS, JavaScript, and React.</textarea>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="platform">Primary Computer Platform:</label>
+                        <input type="text" id="platform" name="platform" required value="Windows 11 and Ubuntu Linux">
+                    </div>
+                </fieldset>
+                
+                <fieldset id="coursesFieldset">
+                    <legend>Courses Currently Taking</legend>
+                    <div id="coursesContainer">
+                        <div class="course-entry">
+                            <input type="text" class="course" name="course1" value="ITSC 3135 - Web App Design and Development">
+                            <button type="button" class="delete-course" onclick="deleteCourse(this)">Delete</button>
+                        </div>
+                    </div>
+                    <button type="button" id="addCourse">Add Another Course</button>
+                </fieldset>
+                
+                <fieldset>
+                    <legend>Additional Information</legend>
+                    <div class="form-group">
+                        <label for="funnyThing">Something Funny/Interesting:</label>
+                        <input type="text" id="funnyThing" name="funnyThing" value="I can solve a Rubik's cube in under 2 minutes!">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="anythingElse">Anything Else?</label>
+                        <textarea id="anythingElse" name="anythingElse">Looking forward to learning more about web development this semester!</textarea>
+                    </div>
+                    
+                    <div class="form-group checkbox">
+                        <input type="checkbox" id="agree" name="agree" required>
+                        <label for="agree">I understand that what is on this page is not password protected and I will not put anything here that I don't want publicly available.</label>
+                    </div>
+                </fieldset>
+                
+                <div class="form-actions">
+                    <input type="submit" value="Submit">
+                    <input type="reset" value="Reset">
+                </div>
+            </form>
+            
+            <div id="results" style="display: none;">
+                <!-- Results will be inserted here by JavaScript -->
+                <a href="#" onclick="resetForm()">Create Another Intro</a>
+            </div>
+        </main>
+
+        <!-- Footer component -->
+        <div data-include="components/footer.html"></div>
+    </div>
+
+    <!-- Script to load components -->
+    <script src="scripts/HTMLInclude.js"></script>
+</body>
+</html>

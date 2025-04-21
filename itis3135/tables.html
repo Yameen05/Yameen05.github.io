@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Tables | Yameen - UNC Charlotte</title>
+    <link rel="stylesheet" href="styles/default.css">
+</head>
+<body>
+    <div id="page-wrapper">
+        <!-- Header component -->
+        <div data-include="components/header.html"></div>
+
+        <main>
+            <h2>HTML Tables Activity</h2>
+            
+            <h3>My Tabular Data</h3>
+            <ol>
+                <p>Yameen Al-Saadi - yalsaaid@yameenenterprises.com - 5 years</p>
+                <p>Tony Stark - tstark@yameenenterprises.com - 12 years</p>
+                <p>Bruce Wayne - bwayne@yameenenterprises.com - 8 years</p>
+                <p>Peter Parker - pparker@yameenenterprises.com - 3 years</p>
+                <p>Steve Rogers - srogers@yameenenterprises.com - 70 years</p>
+                <p>Natasha Romanoff - nromanoff@yameenenterprises.com - 9 years</p>
+                <p>Clark Kent - ckent@yameenenterprises.com - 15 years</p>
+            </ol>
+
+            <h3>Employee Data in Simple Table</h3>
+            <table>
+                <tr>
+                    <th scope="col">Name</th>
+                    <th scope="col">Email</th>
+                    <th scope="col">Years of Service</th>
+                </tr>
+                <tr>
+                    <td>Yameen Al-Saadi</td>
+                    <td>yalsaaid@yameenenterprises.com</td>
+                    <td>5</td>
+                </tr>
+                <tr>
+                    <td>Tony Stark</td>
+                    <td>tstark@yameenenterprises.com</td>
+                    <td>12</td>
+                </tr>
+                <tr>
+                    <td>Bruce Wayne</td>
+                    <td>bwayne@yameenenterprises.com</td>
+                    <td>8</td>
+                </tr>
+                <tr>
+                    <td>Peter Parker</td>
+                    <td>pparker@yameenenterprises.com</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>Steve Rogers</td>
+                    <td>srogers@yameenenterprises.com</td>
+                    <td>70</td>
+                </tr>
+                <tr>
+                    <td>Natasha Romanoff</td>
+                    <td>nromanoff@yameenenterprises.com</td>
+                    <td>9</td>
+                </tr>
+                <tr>
+                    <td>Clark Kent</td>
+                    <td>ckent@yameenenterprises.com</td>
+                    <td>15</td>
+                </tr>
+            </table>
+
+            <h3>Employee Data in Complex Table</h3>
+            <figure>
+                <figcaption>Yameen Enterprises Employee Information</figcaption>
+                <table>
+                    <tr>
+                        <th scope="col">Department</th>
+                        <th scope="col">Name</th>
+                        <th scope="col">Email</th>
+                        <th scope="col">Years</th>
+                        <th scope="col">Monthly Salary</th>
+                    </tr>
+                    <tr>
+                        <td rowspan="2" scope="rowgroup">Leadership</td>
+                        <td>Yameen Al-Saadi</td>
+                        <td>yalsaaid@yameenenterprises.com</td>
+                        <td>5</td>
+                        <td>$8,000</td>
+                    </tr>
+                    <tr>
+                        <td>Tony Stark</td>
+                        <td>tstark@yameenenterprises.com</td>
+                        <td>12</td>
+                        <td>$25,000</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2" scope="rowgroup">Operations</td>
+                        <td>Bruce Wayne</td>
+                        <td>bwayne@yameenenterprises.com</td>
+                        <td>8</td>
+                        <td>$22,000</td>
+                    </tr>
+                    <tr>
+                        <td>Natasha Romanoff</td>
+                        <td>nromanoff@yameenenterprises.com</td>
+                        <td>9</td>
+                        <td>$18,000</td>
+                    </tr>
+                    <tr>
+                        <td scope="row">Research</td>
+                        <td>Peter Parker</td>
+                        <td>pparker@yameenenterprises.com</td>
+                        <td>3</td>
+                        <td>$12,000</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2" scope="rowgroup">Special Projects</td>
+                        <td>Steve Rogers</td>
+                        <td>srogers@yameenenterprises.com</td>
+                        <td>70</td>
+                        <td>$30,000</td>
+                    </tr>
+                    <tr>
+                        <td>Clark Kent</td>
+                        <td>ckent@yameenenterprises.com</td>
+                        <td>15</td>
+                        <td>$28,000</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3"><strong>Total Years of Service</strong></td>
+                        <td>122</td>
+                        <td>$143,000</td>
+                    </tr>
+                </table>
+            </figure>
+        </main>
+
+        <!-- Footer component -->
+        <div data-include="components/footer.html"></div>
+    </div>
+
+    <!-- Script to load components -->
+    <script src="scripts/HTMLInclude.js"></script>
+</body>
+</html>

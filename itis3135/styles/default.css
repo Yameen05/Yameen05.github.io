@@ -1,9 +1,8 @@
 /* General Styles */
   
-  html, body {
+html, body {
     height: 100%;
     scroll-behavior: smooth;
-
 }
 
 #page-wrapper {
@@ -12,12 +11,9 @@
     flex-direction: column;
 }
 
-
 main {
     flex: 1;
 }
-
-
 
 body {
     font-family: Arial, sans-serif;
@@ -44,7 +40,6 @@ header p {
     font-size: 16px;
 }
 
-
 nav {
     text-align: center;
     padding: 10px;
@@ -63,7 +58,6 @@ nav a:hover {
     text-decoration: underline;
     color: #005f8a; 
 }
-
 
 main {
     text-align: center;
@@ -106,7 +100,6 @@ main {
     color: #444; 
 }
 
-
 #introduction ul {
     list-style-type: none;
     padding: 0;
@@ -120,7 +113,6 @@ main {
     margin-bottom: 10px;
     color: #333; 
 }
-
 
 button {
     background-color: #0077b6; 
@@ -193,7 +185,6 @@ img {
     color: #444; /* Darker gray for readability */
 }
 
-
 /* Logo Styling */
 .logo {
     display: flex;
@@ -228,3 +219,206 @@ img {
     display: block; /* Puts "ENTERPRISES" on its own line */
 }
 
+a:link {
+    color: #0077b6; /* Deep Blue for links */
+    text-decoration: none;
+}
+
+a:visited {
+    color: #005f8a; /* Slightly darker blue for visited links */
+}
+
+a:hover {
+    color: #e3f2fd; /* Light Blue for hover */
+    text-decoration: underline;
+}
+
+a:active {
+    color: #003f5c; /* Darker blue for active links */
+}
+
+/* Responsive Design */
+/* Table Styles */
+/* Table Styles */
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 20px 0;
+    font-family: Arial, sans-serif;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+
+/* Header row */
+tr:first-child {
+    background-color: #2c3e50;
+    color: white;
+}
+
+/* Alternate row colors */
+tr:nth-child(even):not(:first-child) {
+    background-color: #f2f2f2;
+}
+
+tr:nth-child(odd):not(:first-child) {
+    background-color: #ffffff;
+}
+
+/* Hover effect */
+tr:hover:not(:first-child) {
+    background-color: #e1f5fe;
+}
+
+/* Figure caption */
+figcaption {
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-size: 1.1em;
+}
+
+/* Footer row */
+tr:last-child {
+    font-weight: bold;
+    background-color: #ecf0f1;
+}
+
+/* Accessibility focus */
+td:focus, th:focus {
+    outline: 2px solid #3498db;
+}
+
+/* Form Styles */
+form {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+}
+
+fieldset {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+legend {
+    font-weight: bold;
+    padding: 0 10px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+input[type="text"],
+input[type="file"],
+textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+textarea {
+    min-height: 80px;
+    resize: vertical;
+}
+
+.checkbox {
+    display: flex;
+    align-items: center;
+}
+
+.checkbox input {
+    margin-right: 10px;
+}
+
+.form-actions {
+    text-align: center;
+    margin-top: 20px;
+}
+
+input[type="submit"],
+input[type="reset"],
+button {
+    padding: 10px 20px;
+    background-color: #2c3e50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 0 10px;
+}
+
+input[type="submit"]:hover,
+input[type="reset"]:hover,
+button:hover {
+    background-color: #1a252f;
+}
+
+/* Course entry styles */
+.course-entry {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.course-entry input {
+    flex-grow: 1;
+    margin-right: 10px;
+}
+
+.delete-course {
+    background-color: #e74c3c !important;
+}
+
+.delete-course:hover {
+    background-color: #c0392b !important;
+}
+
+/* Results styles */
+#results {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+}
+
+#results figure {
+    text-align: center;
+    margin: 20px 0;
+}
+
+#results img {
+    max-width: 300px;
+    border: 1px solid #ddd;
+}
+
+#results h3 {
+    margin-top: 20px;
+    color: #2c3e50;
+}
+
+#results a {
+    display: inline-block;
+    margin-top: 20px;
+    color: #3498db;
+    text-decoration: none;
+}
+
+#results a:hover {
+    text-decoration: underline;
+}
