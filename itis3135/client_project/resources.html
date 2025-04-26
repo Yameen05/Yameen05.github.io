@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning Resources | Classroom Hub</title>
+    <link rel="stylesheet" href="../styles/main.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>Ms. Najd's 3rd Grade Class</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Me</a></li>
+                    <li><a href="resources.html" class="active">Resources</a></li>
+                    <li><a href="gallery.html">Classwork</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="resources-intro">
+            <h2>Learning Resources</h2>
+            <p>Explore these educational tools to support your child's learning at home.</p>
+        </section>
+
+        <section class="resource-categories">
+            <div class="category-tabs">
+                <button class="tab-button active" onclick="openCategory('math')">Math</button>
+                <button class="tab-button" onclick="openCategory('reading')">Reading</button>
+                <button class="tab-button" onclick="openCategory('science')">Science</button>
+            </div>
+
+            <div id="math" class="category-content" style="display: block;">
+                <h3>Math Resources</h3>
+                <div class="resource-grid">
+                    <div class="resource-card">
+                        <img src="../images/math-game.jpg" alt="Math Game">
+                        <h4>Fraction Practice</h4>
+                        <p>Interactive games to understand fractions</p>
+                        <a href="#" class="resource-link">Visit Site</a>
+                    </div>
+                    <div class="resource-card">
+                        <img src="../images/math-game.jpg" alt="Math Game">
+                        <h4>Multiplication Master</h4>
+                        <p>Fun drills for times tables</p>
+                        <a href="#" class="resource-link">Visit Site</a>
+                    </div>
+                </div>
+            </div>
+
+            <div id="reading" class="category-content" style="display: none;">
+                <h3>Reading Resources</h3>
+                <div class="resource-grid">
+                    <div class="resource-card">
+                        <img src="../images/reading-game.jpg" alt="Reading Game">
+                        <h4>Spelling Practice</h4>
+                        <p>Games for weekly spelling words</p>
+                        <a href="#" class="resource-link">Visit Site</a>
+                    </div>
+                </div>
+            </div>
+
+            <div id="science" class="category-content" style="display: none;">
+                <h3>Science Resources</h3>
+                <div class="resource-grid">
+                    <div class="resource-card">
+                        <img src="../images/science-game.jpg" alt="Science Game">
+                        <h4>Ecosystem Explorer</h4>
+                        <p>Learn about habitats and food chains</p>
+                        <a href="#" class="resource-link">Visit Site</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="downloads">
+            <h3>Printable Worksheets</h3>
+            <ul class="download-list">
+                <li><a href="#">Math - Fractions Practice</a></li>
+                <li><a href="#">Reading - Comprehension</a></li>
+                <li><a href="#">Science - Ecosystem Diagram</a></li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 Ms. Najd's Classroom | Designed by <a href="../../index.html">Yameen Alsaaidah</a></p>
+            <div class="validation">
+                <a href="https://validator.w3.org/check?uri=referer" target="_blank">
+                    <img src="../../images/html-validator.png" alt="Valid HTML">
+                </a>
+                <a href="https://jigsaw.w3.org/css-validator/check/referer" target="_blank">
+                    <img src="../../images/css-validator.png" alt="Valid CSS">
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts/main.js"></script>
+</body>
+</html>

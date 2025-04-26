@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yameen's Magic Lamp Co. | Order Form</title>
+    <link rel="stylesheet" href="styles/default.css">
+</head>
+<body>
+    <div id="page-wrapper">
+        <header>
+            <h1>Yameen's Magic Lamp Co.</h1>
+            <p class="tagline">"Three Wishes, Zero Problems!"</p>
+           
+        </header>
+
+        <main>
+            <h2>Order Your Magic Lamp</h2>
+            
+            <!-- FORM STARTS HERE -->
+            <form id="lamp-order-form" action="#" method="post">
+                <fieldset>
+                    <legend>Your Information</legend>
+                    
+                    <div class="form-group">
+                        <label for="name">Full Name:*</label>
+                        <input type="text" id="name" name="name" required 
+                               placeholder="" size="30">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email:*</label>
+                        <input type="email" id="email" name="email" required 
+                               placeholder="" size="30">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="phone">Phone:*</label>
+                        <input type="tel" id="phone" name="phone" required 
+                               placeholder="" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Lamp Customization</legend>
+                    
+                    <div class="form-group">
+                        <label>Lamp Finish:*</label>
+                        <div class="radio-group">
+                            <input type="radio" id="gold" name="finish" value="gold" required>
+                            <label for="gold">24K Gold</label><br>
+                            
+                            <input type="radio" id="silver" name="finish" value="silver">
+                            <label for="silver">Enchanted Silver</label><br>
+                            
+                            <input type="radio" id="bronze" name="finish" value="bronze">
+                            <label for="bronze">Mystic Bronze</label>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="wishes">Wishes Included:*</label>
+                        <select id="wishes" name="wishes" required>
+                            <option value="" disabled selected>Select...</option>
+                            <option value="1">1 Wish (Basic)</option>
+                            <option value="3">3 Wishes (Standard)</option>
+                            <option value="5">5 Wishes (Deluxe)</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>Extra Features:</label>
+                        <div class="checkbox-group">
+                            <input type="checkbox" id="warranty" name="extras" value="warranty">
+                            <label for="warranty">10-Year Genie Warranty</label><br>
+                            
+                            <input type="checkbox" id="manual" name="extras" value="manual">
+                            <label for="manual">Wish-Granting Manual</label><br>
+                            
+                            <input type="checkbox" id="cleaning" name="extras" value="cleaning">
+                            <label for="cleaning">Magic Polish Kit</label>
+                        </div>
+                    </div>
+                </fieldset>
+
+                <div class="form-actions">
+                    <button type="submit" class="submit-btn">Rub the Lamp!</button>
+                    <button type="reset" class="reset-btn">Start Over</button>
+                </div>
+            </form>
+            
+       
+        </main>
+
+        <footer>
+            <p>&copy; 2024 Yameen's Magic Lamp Co. | 
+              
+            
+            <a href="https://validator.w3.org/check?uri=referer" target="_blank">
+                <img style="border:0;width:88px;height:31px" src="https://upload.wikimedia.org/wikipedia/commons/b/bb/W3C_HTML5_certified.png" alt="Valid HTML!">
+            </a>
+            <a href="https://jigsaw.w3.org/css-validator/check/referer" target="_blank">
+                <img style="border:0;width:88px;height:31px" src="https://jigsaw.w3.org/css-validator/images/vcss" alt="Valid CSS!">
+            </a>
+            
+            
+        </footer>
+    </div>
+</body>
+</html>

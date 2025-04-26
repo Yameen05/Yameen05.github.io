@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Ms. Najd | Classroom Hub</title>
+    <link rel="stylesheet" href="../styles/main.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>Ms. Najd's 3rd Grade Class</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Me</a></li>
+                    <li><a href="resources.html">Resources</a></li>
+                    <li><a href="gallery.html">Classwork</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="contact-intro">
+            <h2>Contact Ms. Najd</h2>
+            <p>Please use this form for non-urgent questions. For immediate concerns, contact the school office.</p>
+        </section>
+
+        <section class="contact-methods">
+            <div class="contact-card">
+                <h3>School Information</h3>
+                <p><strong>School Phone:</strong> (704) 555-0100</p>
+                <p><strong>Office Hours:</strong> 7:30am - 3:30pm</p>
+                <p><strong>Address:</strong> 123 Education Lane, Charlotte, NC</p>
+            </div>
+
+            <form id="contact-form" class="contact-form">
+                <div class="form-group">
+                    <label for="name">Your Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="student">Student Name (optional):</label>
+                    <input type="text" id="student" name="student">
+                </div>
+
+                <div class="form-group">
+                    <label for="subject">Subject:</label>
+                    <select id="subject" name="subject" required>
+                        <option value="">Select a topic</option>
+                        <option value="homework">Homework Question</option>
+                        <option value="behavior">Behavior Concern</option>
+                        <option value="meeting">Schedule a Meeting</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+
+                <div class="form-actions">
+                    <button type="submit" class="submit-btn">Send Message</button>
+                    <button type="reset" class="reset-btn">Clear Form</button>
+                </div>
+            </form>
+        </section>
+
+        <section class="faq">
+            <h3>Frequently Asked Questions</h3>
+            <div class="faq-item">
+                <button class="faq-question">When are progress reports sent home?</button>
+                <div class="faq-answer">
+                    <p>Progress reports are distributed every 4 weeks on Fridays. The next one will go home on April 5th.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">What time does school start?</button>
+                <div class="faq-answer">
+                    <p>Students should be in class by 7:45am. The tardy bell rings at 7:50am.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 Ms. Najd's Classroom | Designed by <a href="../../index.html">Yameen Alsaaidah</a></p>
+            <div class="validation">
+                <a href="https://validator.w3.org/check?uri=referer" target="_blank">
+                    <img src="../../images/html-validator.png" alt="Valid HTML">
+                </a>
+                <a href="https://jigsaw.w3.org/css-validator/check/referer" target="_blank">
+                    <img src="../../images/css-validator.png" alt="Valid CSS">
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts/main.js"></script>
+</body>
+</html>

@@ -422,3 +422,212 @@ button:hover {
 #results a:hover {
     text-decoration: underline;
 }
+
+
+@media screen and (max-width: 980px) {
+    #page-wrapper {
+        width: 95%;
+    }
+    
+    header h1 {
+        font-size: 24px;
+    }
+    
+    nav a {
+        display: inline-block;
+        margin: 5px;
+        padding: 5px;
+    }
+    
+    #introduction h1 {
+        font-size: 30px;
+    }
+    
+    #introduction h2 {
+        font-size: 26px;
+    }
+}
+
+/* Mobile Styles (up to 600px) */
+@media screen and (max-width: 600px) {
+    #page-wrapper {
+        width: 100%;
+    }
+    
+    header h1 {
+        font-size: 20px;
+    }
+    
+    header p {
+        font-size: 14px;
+    }
+    
+    nav a {
+        display: block;
+        margin: 5px 0;
+    }
+    
+    #introduction {
+        padding: 15px;
+    }
+    
+    #introduction h1 {
+        font-size: 26px;
+    }
+    
+    #introduction h2 {
+        font-size: 22px;
+    }
+    
+    #introduction h3 {
+        font-size: 18px;
+    }
+    
+    footer {
+        padding: 10px;
+        font-size: 12px;
+    }
+    
+    /* Stack table columns on mobile */
+    table, thead, tbody, th, td, tr {
+        display: block;
+    }
+    
+    thead tr {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+    
+    td {
+        border: none;
+        position: relative;
+        padding-left: 50%;
+    }
+    
+    td:before {
+        position: absolute;
+        left: 6px;
+        content: attr(data-label);
+        font-weight: bold;
+    }
+}
+
+/* === FORM STYLES === */
+form {
+    max-width: 700px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+
+fieldset {
+    border: 2px solid #4CAF50;
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+legend {
+    padding: 0 10px;
+    font-weight: bold;
+    color: #2E7D32;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    color: #333;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    border-color: #4CAF50;
+    outline: none;
+}
+
+/* Radio & Checkboxes */
+.radio-group,
+.checkbox-group {
+    margin-top: 0.5rem;
+}
+
+.radio-group label,
+.checkbox-group label {
+    display: inline-block;
+    margin-left: 8px;
+    font-weight: normal;
+}
+
+/* Buttons */
+.form-actions {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.submit-btn {
+    background-color: #2E7D32;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.submit-btn:hover {
+    background-color: #1B5E20;
+}
+
+.reset-btn {
+    background-color: #757575;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    margin-left: 10px;
+    transition: background 0.3s;
+}
+
+.reset-btn:hover {
+    background-color: #424242;
+}
+
+/* Validation */
+input:required {
+    border-left: 4px solid #FFC107;
+}
+
+input:valid:required {
+    border-left: 4px solid #4CAF50;
+}
+
+.disclaimer {
+    background: #FFF9C4;
+    padding: 1rem;
+    border-radius: 5px;
+    margin-top: 2rem;
+}
