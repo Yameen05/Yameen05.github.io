@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yameen's Alphabet Gallery | ITIS 3135</title>
+    <link rel="stylesheet" href="styles/default.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <div id="page-wrapper">
+        <!-- Dynamic Header -->
+        <div data-include="components/header.html"></div>
+
+        <main>
+            <h2>Alphabet Slideshow: "Yameen Alsaaidah"</h2>
+            
+            <!-- Slideshow Container -->
+            <div class="slideshow-container">
+                <div class="slide active">
+                    <img src="images/slideshow/y-yak.jpg" alt="Yak">
+                    <div class="caption">Y - Yak (1st letter)</div>
+                </div>
+                
+                <div class="slide">
+                    <img src="images/slideshow/a-apple.jpg" alt="Apple">
+                    <div class="caption">A - Apple (2nd letter)</div>
+                </div>
+                
+                <!-- Add slides for M, E, E, N, etc. -->
+                
+                <!-- Navigation Arrows -->
+                <button class="prev">❮</button>
+                <button class="next">❯</button>
+            </div>
+
+            <!-- Thumbnail Navigation -->
+            <div class="thumbnails">
+                <img src="images/slideshow/y-yak-thumb.jpg" data-target="0" class="active">
+                <img src="images/slideshow/a-apple-thumb.jpg" data-target="1">
+                <!-- Add thumbnails for other letters -->
+            </div>
+
+            <!-- AI Generation Notes -->
+            <section class="ai-notes">
+                <h3>Image Sources</h3>
+                <ul>
+                    <li>AI-Generated with Midjourney using prompts: 
+                        <ul>
+                            <li>"Cartoon yak on green landscape, vibrant colors"</li>
+                            <li>"Shiny red apple on wooden table, photorealistic"</li>
+                            <!-- Add other prompts -->
+                        </ul>
+                    </li>
+                </ul>
+            </section>
+        </main>
+
+        <!-- Dynamic Footer -->
+        <div data-include="components/footer.html"></div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="scripts/HTMLInclude.js"></script>
+    <script src="scripts/slideshow.js"></script>
+</body>
+</html>
