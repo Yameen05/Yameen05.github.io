@@ -81,3 +81,12 @@ document.addEventListener('DOMContentLoaded', function() {
         document.querySelector('.tab-button').click();
     }
 });
+
+
+// In main.js
+function filterResources(category) {
+    document.querySelectorAll('.resource-card').forEach(card => {
+        card.style.display = card.dataset.category === category || category === 'all' 
+            ? 'block' : 'none';
+    });
+}

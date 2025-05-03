@@ -701,3 +701,25 @@ input:valid:required {
     background: #f9f9f9;
     border-radius: 8px;
 }
+
+
+/* Drawing Page Styles */
+#drawing-container {
+    margin: 2rem auto;
+    text-align: center;
+}
+
+.instructions {
+    background-color: #f8f8f8;
+    padding: 1rem;
+    border-radius: 8px;
+    max-width: 800px;
+    margin: 2rem auto;
+}
+
+canvas {
+    display: block;
+    margin: 0 auto;
+    border: 2px solid #4CAF50;
+    border-radius: 8px;
+}
